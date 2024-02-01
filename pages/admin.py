@@ -6,4 +6,4 @@ class PageAdmin(admin.ModelAdmin):
     ordering = ('title',)
     search_fields = ('title',)
 
-admin.site.register(Page,PageAdmin)
+admin.site.register(Page, PageAdmin)

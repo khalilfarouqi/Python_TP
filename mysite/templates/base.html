@@ -1,4 +1,4 @@
-<!--{% load static %}-->
+{% load static %}
 <!doctype html>
 <html>
     <head>
@@ -23,10 +23,10 @@
                 </nav>
             </aside>
             <section id="main">
-                <{% block <name> %}>
-                <h1 style="color: blue;">Welcome!</h1>
+                {% block content %}
+                <h1 style="color: blue;">Welcome !</h1>
                 <p>This is the site template</p>
-                <{% endblock <name> %}>
+                {% endblock content %}
             </section>
             <footer id="footer">Copyright &copy; 2018 LPGLAASRI WebDesign</footer>
         </div>
