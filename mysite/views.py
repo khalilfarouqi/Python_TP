@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def index_projet(request):
-    return HttpResponse("<h1 style='text-align:center;'>Bienvenue au site de LP GLAASRI</h1>")
+    return render(request, "base.html")
