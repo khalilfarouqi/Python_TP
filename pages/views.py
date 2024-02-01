@@ -1,4 +1,4 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 def index_pages(request):
-    return HttpResponse("<h1 style='text-align:center;'>Site de GLAASRI : Application pages</h1>")
+    return render(request, "page/page.html")
